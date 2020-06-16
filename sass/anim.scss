@@ -1,0 +1,122 @@
+.header {
+    .hero {
+        &-left {
+            transition: width 1s;
+        }
+
+        &-right {
+            transition: width 1s;
+        }
+
+        &:hover {
+            .hero-left {
+                width: 50%;
+            }
+
+            .hero-right {
+                width: 50%;
+            }
+        }
+    }
+
+    .hero-aboutPage {
+        &-left {
+            transition: width 1s;
+        }
+
+        &-right {
+            transition: width 1s;
+        }
+
+        &:hover {
+            .hero-aboutPage-left {
+                width: 50%;
+            }
+
+            .hero-aboutPage-right {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.main {
+    &-gallery {
+        &-box {
+            &-items {
+                &-link{
+                    &-img {
+                        transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+
+                        &-darker {
+                            transition: width 0.5s, height 0.5s, opacity 0.5s;
+                        }
+                    }
+                }
+                &:hover {
+                    .main-gallery-box-items-link-img {
+                        width: 300px;
+                        height: 200px;
+                        box-shadow: 0 0 5px 0 #2e2e2e;
+
+                        &-darker {
+                            width: 300px;
+                            height: 200px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-galleryPage {
+        &-box {
+            &-items {
+                &-link{
+                    &-img {
+                        transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+
+                        // &-darker {
+                        //     transition: width 0.5s, height 0.5s, opacity 0.5s;
+                        // }
+                    }
+                }
+                &:hover {
+                    .main-galleryPage-box-items-link-img {
+                        width: 400px;
+                        height: 400px;
+                        // box-shadow: 0 0 5px 0 #2e2e2e;
+
+                        // &-darker {
+                        //     width: 300px;
+                        //     height: 200px;
+                        //     opacity: 1;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &-aboutPage-block2 {
+        &-left {
+            transition: width 1s;
+        }
+
+        &-right {
+            transition: width 1s;
+        }
+
+        &:hover {
+            .main-aboutPage-block2-left {
+                width: 50%;
+            }
+
+            .main-aboutPage-block2-right {
+                width: 50%;
+            }
+        }
+    }
+}
