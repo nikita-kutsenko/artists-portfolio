@@ -161,7 +161,7 @@ body {
         background: #000;
         &-left {
             width: 70%;
-            background-image: url(input/main/hero-personal-photo.jpg);
+            background-image: url(../input/main/hero-personal-photo.jpg);
             // background-image: url("https://drive.google.com/uc?export=view&id=1ktD1jXaby0rBhYsQskLauDgwRWPxENjR");
             background-position: center;
             background-repeat: no-repeat;
@@ -197,7 +197,7 @@ body {
 }
 
 .main-galleryPageBackground {
-    background-image: url(input/gallery/page1/line1/gallery-line1-pic1.jpg);
+    background-image: url(../input/gallery/page1/line1/gallery-line1-pic1.jpg);
 }
 .main {
     &-gallery {
@@ -274,16 +274,16 @@ body {
                     }
 
                     .main-gallery-image1 {
-                        background-image: url(input/main/index-pic1.jpg);
+                        background-image: url(../input/main/index-pic1.jpg);
                     }
                     .main-gallery-image2 {
-                        background-image: url(input/main/index-pic2.png);
+                        background-image: url(../input/main/index-pic2.png);
                     }
                     .main-gallery-image3 {
-                        background-image: url(input/main/index-pic3.jpg);
+                        background-image: url(../input/main/index-pic3.jpg);
                     }
                     .main-gallery-image4 {
-                        background-image: url(input/main/index-pic4.png);
+                        background-image: url(../input/main/index-pic4.png);
                     }
                 }
             }
@@ -537,13 +537,13 @@ body {
                     }
 
                     .main-galleryPage-page1-line1-pic1 {
-                        background-image: url(input/gallery/page1/line1/gallery-line1-pic1.jpg);
+                        background-image: url(../input/gallery/page1/line1/gallery-line1-pic1.jpg);
                     }
                     .main-galleryPage-page1-line1-pic2 {
-                        background-image: url(input/gallery/page1/line1/gallery-line1-pic2.png);
+                        background-image: url(../input/gallery/page1/line1/gallery-line1-pic2.png);
                     }
                     .main-galleryPage-page1-line1-pic3 {
-                        background-image: url(input/gallery/page1/line1/gallery-line1-pic3.jpg);
+                        background-image: url(../input/gallery/page1/line1/gallery-line1-pic3.jpg);
                     }
                 }
             }
@@ -660,7 +660,7 @@ body {
     background: #000;
     &-left {
         width: 70%;
-        background-image: url(input/main/hero-personal-photo.jpg);
+        background-image: url(../input/main/hero-personal-photo.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -752,7 +752,7 @@ body {
     
         &-right {
             width: 70%;
-            background-image: url(input/main/index-pic4.png);
+            background-image: url(../input/main/index-pic4.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
