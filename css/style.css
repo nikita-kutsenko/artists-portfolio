@@ -199,7 +199,7 @@ body {
     background: #000; }
     .header .hero-left {
       width: 70%;
-      background-image: url(/input/main/hero-personal-photo.jpg);
+      background-image: url(input/main/hero-personal-photo.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -222,7 +222,7 @@ body {
         line-height: 32px; }
 
 .main-galleryPageBackground {
-  background-image: url(/input/gallery/page1/line1/gallery-line1-pic1.jpg); }
+  background-image: url(input/gallery/page1/line1/gallery-line1-pic1.jpg); }
 
 .main-gallery {
   display: flex;
@@ -273,13 +273,13 @@ body {
               line-height: 42px;
               color: #fff; }
         .main-gallery-box-items-link .main-gallery-image1 {
-          background-image: url(/input/main/index-pic1.jpg); }
+          background-image: url(input/main/index-pic1.jpg); }
         .main-gallery-box-items-link .main-gallery-image2 {
-          background-image: url(/input/main/index-pic2.png); }
+          background-image: url(input/main/index-pic2.png); }
         .main-gallery-box-items-link .main-gallery-image3 {
-          background-image: url(/input/main/index-pic3.jpg); }
+          background-image: url(input/main/index-pic3.jpg); }
         .main-gallery-box-items-link .main-gallery-image4 {
-          background-image: url(/input/main/index-pic4.png); }
+          background-image: url(input/main/index-pic4.png); }
 
 .main-contacts {
   display: flex;
@@ -438,11 +438,11 @@ body {
           background-size: cover;
           box-shadow: 0 0; }
         .main-galleryPage-box-items-link .main-galleryPage-page1-line1-pic1 {
-          background-image: url(/input/gallery/page1/line1/gallery-line1-pic1.jpg); }
+          background-image: url(input/gallery/page1/line1/gallery-line1-pic1.jpg); }
         .main-galleryPage-box-items-link .main-galleryPage-page1-line1-pic2 {
-          background-image: url(/input/gallery/page1/line1/gallery-line1-pic2.png); }
+          background-image: url(input/gallery/page1/line1/gallery-line1-pic2.png); }
         .main-galleryPage-box-items-link .main-galleryPage-page1-line1-pic3 {
-          background-image: url(/input/gallery/page1/line1/gallery-line1-pic3.jpg); }
+          background-image: url(input/gallery/page1/line1/gallery-line1-pic3.jpg); }
   .main-galleryPage-buttons {
     display: flex;
     padding: 40px 0 0; }
@@ -535,7 +535,7 @@ body {
   background: #000; }
   .hero-aboutPage-left {
     width: 70%;
-    background-image: url(/input/main/hero-personal-photo.jpg);
+    background-image: url(input/main/hero-personal-photo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -600,7 +600,7 @@ body {
       line-height: 32px; }
   .main-aboutPage-block2-right {
     width: 70%;
-    background-image: url(/input/main/index-pic4.png);
+    background-image: url(input/main/index-pic4.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
