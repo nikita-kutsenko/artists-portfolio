@@ -1,3 +1,3 @@
-# Portfolio
+# Artists portfolio
 
-My own Portfolio!
+It's a portfolio web-site of artist
