@@ -140,9 +140,10 @@
 
                     <!-- The Close Button -->
                     <span class="galleryModal-close">&times;</span>
-                  
+
                     <!-- Modal Content (The Image) -->
                     <img class="galleryModal-image" id="galleryModalImageID">
+                    
                   
                     <!-- Modal Caption (Image Text) -->
                     <div id="galleryModal-text"></div>
@@ -160,13 +161,13 @@
             </div><!-- main-gallery --> 
         </main>
 
-        <footer class="footer-and-contacts">
-            <div class="footer-and-contacts-left">
-                <p class="footer-and-contacts-left-text">Miro Art Energy</p>
+        <footer class="footer">
+            <div class="footer-left">
+                <p class="footer-left-text">Miro Art Energy</p>
             </div>
-            <div class="footer-and-contacts-right">
-                <p class="footer-and-contacts-right-text">Контакты</p>
-                <div class="footer-and-contacts-right-item">
+            <div class="footer-right">
+                <p class="footer-right-text">Контакты</p>
+                <div class="footer-right-item">
                     <i>
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             width="477.156px" height="477.156px" viewBox="0 0 477.156 477.156" style="enable-background:new 0 0 477.156 477.156;"
@@ -181,9 +182,9 @@
                             </g>
                         </svg>
                     </i>
-                    <a href="tel:+380984092300" class="footer-and-contacts-right-item-link"><p class="footer-and-contacts-right-item-link-text">+38 (098) 409-23-00</p></a>
+                    <a href="tel:+380677703457" class="footer-right-item-link"><p class="footer-right-item-link-text">+38 (067) 770-34-57</p></a>
                 </div>   
-                <div class="footer-and-contacts-right-item">
+                <div class="footer-right-item">
                     <i>
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             width="485.211px" height="485.211px" viewBox="0 0 485.211 485.211" style="enable-background:new 0 0 485.211 485.211;"
@@ -198,7 +199,7 @@
                             </g>
                         </svg>
                     </i>
-                    <a href="mailto:nikita.kutsenko2@gmail.com" class="footer-and-contacts-right-item-link"><p class="footer-and-contacts-right-item-link-text">nikita.kutsenko2@gmail.com</p></a>
+                    <a href="mailto:nikita.kutsenko2@gmail.com" class="footer-right-item-link"><p class="footer-right-item-link-text">nikita.kutsenko2@gmail.com</p></a>
                 </div>
             </div>
         </footer>
@@ -209,26 +210,19 @@
     var modal = document.getElementById("galleryModalID");
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    // var img = document.getElementsByClassName("main-galleryPage-page1-line1-pic1");
-    // var img = document.getElementById("line1img1");
     var images = document.getElementsByClassName('galleryImages');
     var modalImg = document.getElementById("galleryModalImageID");
     var captionText = document.getElementById("galleryModal-text");
 
     // Go through all of the images with our custom class
-    for (var i = 0, j = 1 ; i < images.length; i++ ) {
-        var img = images[i];
-        // j = i + 1;
-        // console.log(j);
-        // and attach our click listener for this image.
-        img.onclick = function(){
+    for (var i = 0 ; i < images.length; i++ ) {
+        var image = images[i];
+        image.onclick = function(){
             modal.style.display = "block";
             modalImg.src = this.src;
             captionText.innerHTML = 'Smth would be here from a file';
         }
     }
-
-    
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("galleryModal-close")[0];
