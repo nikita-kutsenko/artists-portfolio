@@ -78,3 +78,106 @@
         }
     }
 }
+
+@media only screen 
+	and (min-width: 1024px)
+	and (max-width: 1439px) {
+        .main {
+            &-gallery {
+                &-box {
+                    &-items {
+                        &-link{
+                            &-img {
+                                transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+        
+                                &-darker {
+                                    transition: width 0.5s, height 0.5s, opacity 0.5s;
+                                }
+                            }
+                        }
+                        &:hover {
+                            .main-gallery-box-items-link-img {
+                                width: 240px;
+                                height: 160px;
+        
+                                &-darker {
+                                    width: 240px;
+                                    height: 160px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-galleryPage {
+                &-box {
+                    &-items {
+                        &-link{
+                            &-img {
+                                transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+                            }
+                        }
+                        &:hover {
+                            .main-galleryPage-box-items-link-img {
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/*mobile*/
+@media only screen 
+    and (min-width: 320px)
+    and (max-width: 1023px) {
+        .main {
+            &-gallery {
+                &-box {
+                    &-items {
+                        &-link{
+                            &-img {
+                                transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+        
+                                &-darker {
+                                    transition: width 0.5s, height 0.5s, opacity 0.5s;
+                                }
+                            }
+                        }
+                        &:hover {
+                            .main-gallery-box-items-link-img {
+                                width: 240px;
+                                height: 160px;
+        
+                                &-darker {
+                                    width: 240px;
+                                    height: 160px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-galleryPage {
+                &-box {
+                    &-items {
+                        &-link{
+                            &-img {
+                                transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+                            }
+                        }
+                        &:hover {
+                            .main-galleryPage-box-items-link-img {
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
