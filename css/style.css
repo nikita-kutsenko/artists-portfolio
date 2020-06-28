@@ -668,8 +668,6 @@ body {
                   cursor: pointer; }
                 .header .nav-right-list .nav-gallery-dropdown-item:hover .nav-gallery-dropdown-item-link {
                   color: #D5C4B2; }
-            .header .nav-right-list .nav-gallery:hover ul.nav-gallery-dropdown {
-              display: block; }
         .header .nav-right-switcher {
           display: flex; }
           .header .nav-right-switcher-lg {
@@ -873,6 +871,7 @@ body {
   .active-nav .header .nav-right {
     display: flex;
     position: absolute;
+    z-index: 50;
     justify-content: flex-start;
     flex-direction: column;
     background: #000000;
@@ -909,6 +908,8 @@ body {
               border-bottom: 1px solid #D5C4B2;
               font-size: 18px;
               line-height: 48px; }
+        .active-nav .header .nav-right-list .nav-gallery-active {
+          display: block; }
         .active-nav .header .nav-right-list .nav-gallery:hover ul.nav-gallery-dropdown {
           display: block; }
     .active-nav .header .nav-right-switcher {
