@@ -897,13 +897,6 @@ body {
                                     }
                                 }
                             }
-        
-                            &:hover {
-                                ul.nav-gallery-dropdown {
-                                    display: block;
-                                }
-                            }
-                            
                         }
                     }
         
@@ -1262,6 +1255,7 @@ body {
                     &-right {
                         display: flex;
                         position: absolute;
+                        z-index: 50;
 
                         justify-content: flex-start;
                         flex-direction: column;
@@ -1316,6 +1310,10 @@ body {
                                             line-height: 48px;
                                         }
                                     }
+                                }
+            
+                                &-active {
+                                    display: block;
                                 }
             
                                 &:hover {
