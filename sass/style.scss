@@ -430,13 +430,13 @@ body {
     
     &-text {
         display: inline-block;
-        padding: 2px 16px;
+        padding: 2px 80px;
         color: #e2e2e2;
         text-transform: uppercase;
 
         font-weight: bold;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 26px;
     }
 }
 
@@ -472,9 +472,31 @@ body {
     }
 
 
-    .main-galleryPageBackground {
-        background-image: url(input/gallery/page1/line1/gallery-line1-pic1.jpg);
+    .main-galleryPage1Background {
+        background-image: url(../input/gallery/page1/gallery-page1-background.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+    .main-galleryPage2Background {
+        background-image: url(../input/gallery/page2/gallery-page2-background.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-galleryPage3Background {
+        background-image: url(../input/gallery/page3/gallery-page3-background.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-galleryPage4Background {
+        background-image: url(../input/gallery/page4/gallery-page4-background.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .main {
         &-galleryPage {
             display: flex;
@@ -484,7 +506,7 @@ body {
             
             padding: 0 0 120px;
 
-            background: #FDFDFD;
+            // background: #FDFDFD;
 
             &-textBox {
                 padding: 82px 0 0;

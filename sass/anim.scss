@@ -1,5 +1,5 @@
 .rainbow-line-text {
-    animation: mig 5s infinite;
+    animation: mig 10s infinite;
   }
   
   @keyframes mig {
@@ -7,20 +7,12 @@
       color: #ff0202;
     }
   
-    20% {
-      color: #f5dc00;
+    33% {
+      color: #1730ec;
     }
   
-    40% {
-      color: #62f500;
-    }
-  
-    60% {
-      color: #00c4f5;
-    }
-  
-    80% {
-      color: #bc00f5;
+    66% {
+      color: #2f9805;
     }
   
     100% {
