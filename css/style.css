@@ -49,9 +49,15 @@ table {
 @keyframes mig {
   0% {
     color: #ff0202; }
+  32% {
+    color: #ff0202; }
   33% {
     color: #1730ec; }
+  65% {
+    color: #1730ec; }
   66% {
+    color: #2f9805; }
+  99% {
     color: #2f9805; }
   100% {
     color: #ff0202; } }
@@ -305,13 +311,13 @@ body {
               line-height: 42px;
               color: #fff; }
         .main-gallery-box-items-link .main-gallery-image1 {
-          background-image: url(../input/main/index-pic1.jpg); }
+          background-image: url(../input/main/index-pic1.jpeg); }
         .main-gallery-box-items-link .main-gallery-image2 {
-          background-image: url(../input/main/index-pic2.png); }
+          background-image: url(../input/main/index-pic2.jpeg); }
         .main-gallery-box-items-link .main-gallery-image3 {
-          background-image: url(../input/main/index-pic3.jpg); }
+          background-image: url(../input/main/index-pic3.jpeg); }
         .main-gallery-box-items-link .main-gallery-image4 {
-          background-image: url(../input/main/index-pic4.png); }
+          background-image: url(../input/main/index-pic4.jpeg); }
 
 .footer-contacts {
   display: flex;
@@ -361,6 +367,69 @@ body {
       line-height: 32px;
       margin-bottom: 10px;
       color: #ffffff; }
+
+.hero-indexTest1,
+.hero-aboutTest1,
+.main-aboutTest1,
+.main-galleryPage4Test1 {
+  background-image: url(../input/bg/1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-indexTest2,
+.hero-aboutTest2,
+.main-aboutTest2,
+.main-galleryPage4Test2 {
+  background-image: url(../input/bg/2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-indexTest3,
+.hero-aboutTest3,
+.main-aboutTest3,
+.main-galleryPage4Test3 {
+  background-image: url(../input/bg/3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-indexTest4,
+.hero-aboutTest4,
+.main-aboutTest4,
+.main-galleryPage4Test4 {
+  background-image: url(../input/bg/4.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-indexTest5,
+.hero-aboutTest5,
+.main-aboutTest5,
+.main-galleryPage4Test5 {
+  background-image: url(../input/bg/5.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-indexTest6,
+.hero-aboutTest6,
+.main-aboutTest6,
+.main-galleryPage4Test6 {
+  background-image: url(../input/bg/6.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-indexTest7,
+.hero-aboutTest7,
+.main-aboutTest7,
+.main-galleryPage4Test7 {
+  background-image: url(../input/bg/7.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .rainbow-line {
   display: flex;
@@ -456,7 +525,8 @@ body {
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          box-shadow: 0 0; }
+          color: #656565;
+          box-shadow: 0 0 20px 4px; }
         .main-galleryPage-box-items-link .main-galleryPage-page1-line1-pic1 {
           background-image: url(../input/gallery/page1/line1/gallery-line1-pic1.jpg); }
         .main-galleryPage-box-items-link .main-galleryPage-page1-line1-pic2 {

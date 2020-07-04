@@ -5,36 +5,28 @@ var images = document.getElementsByClassName('galleryImages');
 var modalImg = document.getElementById("galleryModalImageID");
 var captionText = document.getElementById("galleryModal-text");
 
-let fileLink = new Array();
+// var textLink = ['text0.txt', 'text1.txt','text2.txt','text3.txt','text4.txt','text5.txt','text6.txt','text7.txt','text8.txt'];
 
 // Go through all of the images with our custom class
 for (var i = 0 ; i < images.length; i++ ) {
     var image = images[i];
-    fileLink[i] = 'file' + i + '.txt'; 
-    console.log(fileLink[i]);
 
-    
     image.onclick = function click(){
-        console.log(fileLink[i]);
         modal.style.display = "block";
         modalImg.src = this.src;
-        captionText.innerHTML = readFiles(fileLink[i]);
-         // captionText.innerHTML = 'Smth would be here from a file';
-        // captionText.style.display = "block";
-    };
-
-    function readFiles(link) {
-        console.log(link);
-        $.get("'" + link + "'" , function(data) {
-            alert(data);
-        }, "text");
-    }
+        link = this.alt;
+        captionText.innerHTML = function readFiles() {
+            $.get('text0.txt', function(data) {
+                captionText.innerHTML = data;
+            }, "text");
+        }
+    } 
 }
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("galleryModal-close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function() { 
     modal.style.display = "none";
-};
+}
