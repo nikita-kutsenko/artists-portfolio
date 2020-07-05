@@ -6,8 +6,8 @@ var modalImg = document.getElementById("galleryModalImageID");
 var captionText = document.getElementById("galleryModal-text");
 function readFiles(fileName) {
     $.get(fileName, function(data) {
-        console.log(fileName);
-        console.log(data);
+        // console.log(fileName);
+        // console.log(data);
         return data;
     }, "text");
 }
@@ -21,6 +21,7 @@ for (var i = 0 ; i < images.length; i++ ) {
         let dataTitle = this.getAttribute('data-title');
         console.log(dataTitle);
         captionText.innerHTML = readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt');
+        console.log(readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt'));
     }
 }
 
