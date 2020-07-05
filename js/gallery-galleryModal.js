@@ -5,11 +5,15 @@ var images = document.getElementsByClassName('galleryImages');
 var modalImg = document.getElementById("galleryModalImageID");
 var captionText = document.getElementById("galleryModal-text");
 function readFiles(fileName) {
-    return $.get(fileName, function(data) {
+    var text;
+    $.get(fileName, function(data) {
         // console.log(fileName);
         // console.log(data);
+        text = data;
         return data;
     }, "text");
+    console.log(text);
+    return text;
 }
 
 // Go through all of the images with our custom class
