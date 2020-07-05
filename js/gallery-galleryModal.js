@@ -16,8 +16,8 @@ for (var i = 0 ; i < images.length; i++ ) {
     image.onclick = function click(){
         modal.style.display = "block";
         modalImg.src = this.src;
-        
-        captionText.innerHTML = readFiles();
+        let dataTitle = this.getAttribute('data-title');
+        captionText.innerHTML = readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt');
     }
 }
 
