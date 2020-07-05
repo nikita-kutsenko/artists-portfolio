@@ -4,6 +4,11 @@ var modal = document.getElementById("galleryModalID");
 var images = document.getElementsByClassName('galleryImages');
 var modalImg = document.getElementById("galleryModalImageID");
 var captionText = document.getElementById("galleryModal-text");
+function readFiles(fileName) {
+    $.get(fileName, function(data) {
+        return data;
+    }, "text");
+}
 
 // Go through all of the images with our custom class
 for (var i = 0 ; i < images.length; i++ ) {
@@ -11,7 +16,8 @@ for (var i = 0 ; i < images.length; i++ ) {
     image.onclick = function click(){
         modal.style.display = "block";
         modalImg.src = this.src;
-        captionText.innerHTML = 'Smth would be here from a file';
+        
+        captionText.innerHTML = readFiles();
     }
 }
 
