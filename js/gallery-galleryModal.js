@@ -24,7 +24,7 @@ for (var i = 0 ; i < images.length; i++ ) {
             return data;
         }, "text");
         console.log('text', text);
-
+        console.log('text.responseText', text.responseText);
         captionText.innerHTML = text.responseText;
         // captionText.innerHTML = readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt');
     }
