@@ -4,13 +4,13 @@ var modal = document.getElementById("galleryModalID");
 var images = document.getElementsByClassName('galleryImages');
 var modalImg = document.getElementById("galleryModalImageID");
 var captionText = document.getElementById("galleryModal-text");
-function readFiles(fileName) {
-    $.get(fileName, function(data) {
-        // console.log(fileName);
-        // console.log(data);
-        return data;
-    }, "text");
-}
+// function readFiles(fileName) {
+//     $.get(fileName, function(data) {
+//         // console.log(fileName);
+//         // console.log(data);
+//         return data;
+//     }, "text");
+// }
 
 // Go through all of the images with our custom class
 for (var i = 0 ; i < images.length; i++ ) {
@@ -20,8 +20,12 @@ for (var i = 0 ; i < images.length; i++ ) {
         modalImg.src = this.src;
         let dataTitle = this.getAttribute('data-title');
         console.log(dataTitle);
-        captionText.innerHTML = readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt');
-        console.log(readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt'));
+        captionText.innerHTML = $.get('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt', function(data) {
+            // console.log(fileName);
+            // console.log(data);
+            return data;
+        }, "text");
+        // console.log(readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt'));
     }
 }
 
