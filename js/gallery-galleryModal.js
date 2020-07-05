@@ -7,6 +7,7 @@ var captionText = document.getElementById("galleryModal-text");
 function readFiles(fileName) {
     $.get(fileName, function(data) {
         console.log(fileName);
+        console.log(data);
         return data;
     }, "text");
 }
