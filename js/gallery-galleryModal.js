@@ -11,7 +11,7 @@ function readFiles(fileName) {
         return data;
     }, "text");
     console.log(text);
-    return text;
+    return text.responseText;
 }
 
 // Go through all of the images with our custom class
