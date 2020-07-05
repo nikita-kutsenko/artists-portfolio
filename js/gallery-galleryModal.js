@@ -10,7 +10,7 @@ function readFiles(fileName) {
         // console.log(data);
         return data;
     }, "text");
-    console.log(text);
+    // console.log(text);
     return text.responseText;
 }
 
@@ -22,6 +22,7 @@ for (var i = 0 ; i < images.length; i++ ) {
         modalImg.src = this.src;
         let dataTitle = this.getAttribute('data-title');
         console.log(dataTitle);
+        console.log(readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt'));
         captionText.innerHTML = readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt');
     }
 }
