@@ -14,6 +14,7 @@ function readFiles(fileName) {
 for (var i = 0 ; i < images.length; i++ ) {
     var image = images[i];
     image.onclick = function click(){
+        console.log('hello');
         modal.style.display = "block";
         modalImg.src = this.src;
         let dataTitle = this.getAttribute('data-title');
