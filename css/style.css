@@ -251,7 +251,10 @@ body {
       justify-content: center;
       align-items: center;
       padding: 0 80px;
-      background-color: #D5C4B2; }
+      background-image: url(../input/main/hero-background.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
       .header .hero-right-name, .header .hero-right-lastname {
         text-transform: uppercase;
         font-weight: bold;
@@ -600,6 +603,10 @@ body {
       color: #f1f1f1;
       font-size: 40px;
       font-weight: bold;
+      text-align: center;
+      width: 40px;
+      background-color: #000000;
+      z-index: 100;
       transition: 0.3s; }
       .main-galleryPage .galleryModal-close:hover, .main-galleryPage .galleryModal-close:focus {
         color: #bbb;
@@ -609,7 +616,6 @@ body {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
     text-align: center;
     color: #ccc;
     padding: 10px 0; }
@@ -627,7 +633,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 80px;
-    background-color: #D5C4B2; }
+    background-image: url(../input/about/about-biography-background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
     .header .hero-aboutPage-left-header {
       text-transform: uppercase;
       font-weight: bold;
@@ -651,9 +660,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 80px;
-  background-color: #ffffff;
-  padding: 0 200px; }
+  padding: 0 200px;
+  background-image: url(../input/about/about-block1-background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .main-aboutPage-block1-header {
     text-transform: uppercase;
     font-weight: bold;
