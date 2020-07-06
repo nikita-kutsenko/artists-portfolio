@@ -12,6 +12,7 @@ for (var i = 0 ; i < images.length; i++ ) {
         modal.style.display = "block";
         modalImg.src = this.src;
         let imgAttr = this.attributes['data-text'].textContent;
+        
         $.get('https://nikita-kutsenko.github.io/artists-portfolio/text'+imgAttr+'.txt', function(data) {
         $('#galleryModal-text').text(data);
         },'text');
@@ -19,13 +20,6 @@ for (var i = 0 ; i < images.length; i++ ) {
         // 'https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt'
     }
 }
-
-$('.imgClick').click(function(){
-    let imgAttr = this.attributes['data-text'].textContent;
-    $.get('http://loc.casinosanalyzer.com:8081/build/text'+imgAttr+'.txt', function(data) {
-      $('#finalText').text(data);
-    },'text');
-  });
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("galleryModal-close")[0];
