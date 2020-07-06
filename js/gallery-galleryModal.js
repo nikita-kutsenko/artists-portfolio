@@ -4,13 +4,6 @@ var modal = document.getElementById("galleryModalID");
 var images = document.getElementsByClassName('galleryImages');
 var modalImg = document.getElementById("galleryModalImageID");
 var captionText = document.getElementById("galleryModal-text");
-// function readFiles(fileName) {
-//     var text = $.get(fileName, function(data) {
-//         return data;
-//     }, "text");
-//     // console.log(text);
-//     return text.responseText;
-// }
 
 // Go through all of the images with our custom class
 for (var i = 0 ; i < images.length; i++ ) {
@@ -18,17 +11,21 @@ for (var i = 0 ; i < images.length; i++ ) {
     image.onclick = function click(){
         modal.style.display = "block";
         modalImg.src = this.src;
-        let dataTitle = this.getAttribute('data-title');
+        let imgAttr = this.attributes['data-text'].textContent;
+        $.get('https://nikita-kutsenko.github.io/artists-portfolio/text'+imgAttr+'.txt', function(data) {
+        $('#galleryModal-text').text(data);
+        },'text');
         
-        var text = $.get('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt', function(data) {
-            return data;
-        }, "text");
-        console.log('text', text);
-        console.log('text.responseText', text.responseText);
-        captionText.innerHTML = text.responseText;
-        // captionText.innerHTML = readFiles('https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt');
+        // 'https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt'
     }
 }
+
+$('.imgClick').click(function(){
+    let imgAttr = this.attributes['data-text'].textContent;
+    $.get('http://loc.casinosanalyzer.com:8081/build/text'+imgAttr+'.txt', function(data) {
+      $('#finalText').text(data);
+    },'text');
+  });
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("galleryModal-close")[0];
