@@ -12,12 +12,15 @@ for (var i = 0 ; i < images.length; i++ ) {
         modal.style.display = "block";
         modalImg.src = this.src;
         let imgAttr = this.attributes['data-text'].textContent;
+        let pageAttr = this.attributes['data-page'].textContent;
+        console.dir(image);
         
-        $.get('https://nikita-kutsenko.github.io/artists-portfolio/text'+imgAttr+'.txt', function(data) {
+        $.get('text/page'+pageAttr+'/text'+imgAttr+'.txt', function(data) {
         $('#galleryModal-text').text(data);
         },'text');
-        
-        // 'https://nikita-kutsenko.github.io/artists-portfolio/text' + dataTitle + '.txt'
+        // $.get('https://nikita-kutsenko.github.io/artists-portfolio/text'+imgAttr+'.txt', function(data) {
+        // $('#galleryModal-text').text(data);
+        // },'text');
     }
 }
 
