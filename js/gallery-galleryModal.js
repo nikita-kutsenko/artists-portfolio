@@ -13,14 +13,11 @@ for (var i = 0 ; i < images.length; i++ ) {
         modalImg.src = this.src;
         let imgAttr = this.attributes['data-text'].textContent;
         let pageAttr = this.attributes['data-page'].textContent;
-        console.dir(image);
+        let lgAttr = this.attributes['data-lg'].textContent;
         
-        $.get('text/page'+pageAttr+'/text'+imgAttr+'.txt', function(data) {
+        $.get('text/'+lgAttr+'/page'+pageAttr+'/text'+imgAttr+'.txt', function(data) {
         $('#galleryModal-text').text(data);
         },'text');
-        // $.get('https://nikita-kutsenko.github.io/artists-portfolio/text'+imgAttr+'.txt', function(data) {
-        // $('#galleryModal-text').text(data);
-        // },'text');
     }
 }
 

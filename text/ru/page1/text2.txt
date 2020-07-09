@@ -1,0 +1,5 @@
+page 1 text 2  
+"Название картины" || 
+Цена: 9999$ || 
+Размеры: 2.5м х 2.5м || 
+Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae ullamcorper ipsum.
