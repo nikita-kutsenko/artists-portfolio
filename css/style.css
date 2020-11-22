@@ -609,7 +609,7 @@ body {
     width: 80%;
     text-align: center;
     color: #ccc;
-    padding: 20px 0; }
+    padding: 20px 0 100px; }
 
 .header .hero-aboutPage {
   display: flex;
