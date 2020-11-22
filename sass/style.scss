@@ -242,7 +242,7 @@ body {
 
             &-text {
                 font-weight: normal;
-                font-size: 16px;
+                font-size: 22px;
                 line-height: 32px;
             }
         }
@@ -349,7 +349,7 @@ body {
     &-contacts {
         display: flex;
         justify-content: space-between;
-        padding: 24px 100px;
+        padding: 80px 100px 100px;
         background-color: #000000;
 
         &-left {
@@ -422,69 +422,6 @@ body {
     
 }
 
-.hero-indexTest1,
-.hero-aboutTest1,
-.main-aboutTest1,
-.main-galleryPage4Test1 {
-    background-image: url(../input/bg/1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hero-indexTest2,
-.hero-aboutTest2,
-.main-aboutTest2,
-.main-galleryPage4Test2  {
-    background-image: url(../input/bg/2.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hero-indexTest3,
-.hero-aboutTest3,
-.main-aboutTest3,
-.main-galleryPage4Test3  {
-    background-image: url(../input/bg/3.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hero-indexTest4,
-.hero-aboutTest4,
-.main-aboutTest4,
-.main-galleryPage4Test4  {
-    background-image: url(../input/bg/4.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hero-indexTest5,
-.hero-aboutTest5,
-.main-aboutTest5,
-.main-galleryPage4Test5  {
-    background-image: url(../input/bg/5.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hero-indexTest6,
-.hero-aboutTest6,
-.main-aboutTest6,
-.main-galleryPage4Test6  {
-    background-image: url(../input/bg/6.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hero-indexTest7,
-.hero-aboutTest7,
-.main-aboutTest7,
-.main-galleryPage4Test7  {
-    background-image: url(../input/bg/7.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 // line 
@@ -544,25 +481,25 @@ body {
 
 
     .main-galleryPage1Background {
-        background-image: url(../input/gallery/page1/gallery-page1-background.jpeg);
+        background-image: url(../input/gallery/img/page1/gallery-page1-background.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .main-galleryPage2Background {
-        background-image: url(../input/gallery/page2/gallery-page2-background.jpeg);
+        background-image: url(../input/gallery/img/page2/gallery-page2-background.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .main-galleryPage3Background {
-        background-image: url(../input/gallery/page3/gallery-page3-background.jpeg);
+        background-image: url(../input/gallery/img/page3/gallery-page3-background.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .main-galleryPage4Background {
-        background-image: url(../input/gallery/page4/gallery-page4-background.jpeg);
+        background-image: url(../input/gallery/img/page4/gallery-page4-background.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -678,7 +615,7 @@ body {
                 display: none; /* Hidden by default */
                 position: fixed; /* Stay in place */
                 z-index: 1; /* Sit on top */
-                padding-top: 150px; /* Location of the box */
+                padding-top: 80px; /* Location of the box */
                 left: 0;
                 top: 0;
                 width: 100%; /* Full width */
@@ -687,10 +624,34 @@ body {
                 background-color: rgb(0,0,0); /* Fallback color */
                 background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 
+                &-btns {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0 0;
+                    margin: 0 0 20px;
+
+                    &-item {
+                        padding: 0 0 10px;
+                        margin: 0 15px;
+                        color: #ffffff;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #D5C4B2;
+                            border-bottom: 1px solid #D5C4B2;
+                        }
+                    }
+
+                    #modal-front {
+                        color: #D5C4B2;
+                        border-bottom: 1px solid #D5C4B2;
+                    }
+                }
+
                 &-imageBox {
                     margin: auto;
                     display: block;
-                    height: calc(100vh - 200px);
+                    height: calc(100vh - 240px);
                     width: calc(100vw - 200px);
 
                     &-image {
@@ -711,6 +672,50 @@ body {
                         to {transform:scale(1)}
                     }
                 }
+
+                &-imageBackBox {
+                    margin: auto;
+                    display: none;
+                    height: calc(100vh - 240px);
+                    width: calc(100vw - 200px);
+
+                    &-image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        animation-name: zoom;
+                        animation-duration: 0.6s;
+                    }
+
+                    @keyframes zoom {
+                        from {transform:scale(0)}
+                        to {transform:scale(1)}
+                    }
+                }
+
+                &-videoBox {
+                    display: none;
+                    justify-content: center;
+
+                    &-video {
+                        outline: none;
+                        height: calc(100vh - 240px);
+                        animation-name: zoom;
+                        animation-duration: 0.6s;
+                    }
+
+                    @keyframes zoom {
+                        from {transform:scale(0)}
+                        to {transform:scale(1)}
+                    }
+                }
+
+                // &-lyrics {
+                //     display: none;
+                //     margin: auto;
+                //     height: calc(100vh - 240px);
+                //     width: calc(100vw - 200px);
+                // }
                 
 
                 &-close {
@@ -744,7 +749,17 @@ body {
                 width: 80%;
                 text-align: center;
                 color: #ccc;
-                padding: 10px 0;
+                padding: 20px 0;
+                // height: 150px;
+            }
+
+            #galleryModal-lyrics {
+                margin: auto;
+                display: none;
+                width: 80%;
+                text-align: center;
+                color: #ccc;
+                padding: 20px 0;
                 // height: 150px;
             }
         }
@@ -776,16 +791,18 @@ body {
             background-size: cover;
 
             &-header {
+                text-align: center;
                 text-transform: uppercase;
-
                 font-weight: bold;
                 font-size: 60px;
                 line-height: 80px;
+                margin-bottom: 20px;
             }
 
             &-text {
+                max-width: 500px;
                 font-weight: normal;
-                font-size: 16px;
+                font-size: 22px;
                 line-height: 32px;
             }
         }
@@ -793,7 +810,7 @@ body {
         &-right {
             width: 40%;
             background-image: url(../input/about/about-personal-photo.jpeg);
-            background-position: center;
+            background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -805,11 +822,11 @@ body {
         &-aboutPage-block1 {
             display: flex;
             height: calc(100vh - 82px);
-            max-height: 550px;
+            //max-height: 550px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 0 200px;
+            padding: 80px 200px 100px;
             // padding: 0 80px;
             // background-color: #ffffff;
 
@@ -819,16 +836,18 @@ body {
             background-size: cover;
 
             &-header {
+                margin-bottom: 24px;
                 text-transform: uppercase;
-
                 font-weight: bold;
                 font-size: 60px;
                 line-height: 80px;
             }
 
             &-text {
+                margin-bottom: 24px;
+                max-width: 760px;
                 font-weight: normal;
-                font-size: 16px;
+                font-size: 22px;
                 line-height: 32px;
             }
         }
@@ -1158,7 +1177,7 @@ body {
             &-galleryPage {
                 min-width: 320px;
                 
-                padding: 0 0 80px;
+                padding: 0 0 60px;
     
                 &-textBox {
                     padding: 60px 0 0;
@@ -1201,49 +1220,35 @@ body {
                 }
     
                 .galleryModal {
-                    padding-top: 80px; /* Location of the box */
+                    padding-top: 60px; /* Location of the box */
     
-                    &-imageBox {
-                        margin: auto;
-                        display: block;
-                        height: calc(100vh - 140px);
+                    &-btns {
+                        margin: 0;
+                        &-item {
+                            margin: 0 5px;
+                            font-size: 14px;
+                        }
+    
+                        #modal-front {
+                            color: #D5C4B2;
+                            border-bottom: 1px solid #D5C4B2;
+                        }
+                    }
+
+                    &-imageBox,
+                    &-imageBackBox {
+                        height: calc(100vh - 200px);
                         width: calc(100vw - 24px);
-    
-                        &-image {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                        }
-                        
-    
-                        &-image, 
-                        #galleryModal-text {
-                            animation-name: zoom;
-                            animation-duration: 0.6s;
-                        }
-    
-                        @keyframes zoom {
-                            from {transform:scale(0)}
-                            to {transform:scale(1)}
-                        }
+                    }
+
+                    &-videoBox {
+                        height: calc(100vh - 200px);
                     }
                     
     
                     &-close {
-                        position: absolute;
-                        top: 100px;
-                        right: 50px;
-                        color: #f1f1f1;
-                        font-size: 40px;
-                        font-weight: bold;
-                        transition: 0.3s;
-    
-                        &:hover,
-                        &:focus {
-                            color: #bbb;
-                            text-decoration: none;
-                            cursor: pointer;
-                        }
+                        top: 120px;
+                        right: 30px;
                     }
                 }
     
@@ -1254,7 +1259,14 @@ body {
                     max-width: 700px;
                     text-align: center;
                     color: #ccc;
-                    padding: 10px 0;
+                    font-size: 14px;
+                    padding: 5px 0;
+                    // height: 150px;
+                }
+
+                #galleryModal-lyrics {
+                    font-size: 14px;
+                    padding: 5px 0 100px;
                     // height: 150px;
                 }
             }
