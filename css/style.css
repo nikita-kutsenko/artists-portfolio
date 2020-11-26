@@ -236,12 +236,13 @@ body {
     display: flex;
     height: calc(100vh - 82px);
     max-height: 850px;
+    min-height: 360px;
     padding: 0 0 0;
     background: #000; }
     .header .hero-left {
       width: 40%;
       background-image: url(../input/main/hero-personal-photo.jpeg);
-      background-position: center;
+      background-position: top;
       background-repeat: no-repeat;
       background-size: cover; }
     .header .hero-right {
@@ -262,8 +263,9 @@ body {
         line-height: 80px; }
       .header .hero-right-text {
         font-weight: normal;
-        font-size: 22px;
-        line-height: 32px; }
+        width: 70%;
+        font-size: 34px;
+        line-height: 56px; }
 
 .main-gallery {
   display: flex;
@@ -606,7 +608,7 @@ body {
   .main-galleryPage #galleryModal-lyrics {
     margin: auto;
     display: none;
-    width: 80%;
+    width: 50%;
     text-align: center;
     color: #ccc;
     padding: 20px 0 100px; }
@@ -615,6 +617,7 @@ body {
   display: flex;
   height: calc(100vh - 82px);
   max-height: 850px;
+  min-height: 350px;
   padding: 82px 0 0;
   background: #000; }
   .header .hero-aboutPage-left {
@@ -650,6 +653,7 @@ body {
 .main-aboutPage-block1 {
   display: flex;
   height: calc(100vh - 82px);
+  min-height: 700px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -668,8 +672,8 @@ body {
     margin-bottom: 24px;
     max-width: 760px;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 32px; }
+    font-size: 28px;
+    line-height: 40px; }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
@@ -790,7 +794,10 @@ body {
         .header .hero-right-lastname {
           margin-bottom: 48px; }
         .header .hero-right-text {
-          text-align: center; }
+          text-align: center;
+          width: 90%;
+          font-size: 22px;
+          line-height: 36px; }
     .header .hero-aboutPage {
       padding: 57px 0 0;
       flex-direction: column-reverse;
@@ -804,7 +811,7 @@ body {
           font-size: 32px;
           line-height: 48px; }
         .header .hero-aboutPage-left-text {
-          font-size: 16px;
+          font-size: 20px;
           line-height: 32px; }
       .header .hero-aboutPage-right {
         width: 100vw;
@@ -903,6 +910,9 @@ body {
     .main-aboutPage-block1-header {
       font-size: 32px;
       line-height: 48px; }
+    .main-aboutPage-block1-text {
+      font-size: 20px;
+      line-height: 26px; }
   .footer-contacts {
     flex-direction: column;
     align-items: center;
