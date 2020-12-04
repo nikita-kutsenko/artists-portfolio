@@ -351,7 +351,7 @@ body {
     &-contacts {
         display: flex;
         justify-content: space-between;
-        padding: 80px 100px 100px;
+        padding: 80px 100px 80px;
         background-color: #000000;
 
         &-left {
@@ -421,7 +421,17 @@ body {
             }
         }
     }
-    
+    &-info {
+        text-align: center;
+        padding: 0 0 20px;
+        background-color: #000000;
+
+        &-link {
+            color: #ffffff;
+            opacity: .5;
+            font-size: 12px;
+        }
+    }
 }
 
 
@@ -715,29 +725,29 @@ body {
                     }
                 }
 
-                // &-videoBox {
-                //     display: none;
-                //     justify-content: center;
+                &-videoBox {
+                    display: none;
+                    justify-content: center;
 
-                //     &-video {
-                //         outline: none;
-                //         height: calc(100vh - 240px);
-                //         animation-name: zoom;
-                //         animation-duration: 0.6s;
-                //     }
+                    &-video {
+                        outline: none;
+                        height: calc(100vh - 240px);
+                        animation-name: zoom;
+                        animation-duration: 0.6s;
+                    }
 
-                //     @keyframes zoom {
-                //         from {transform:scale(0)}
-                //         to {transform:scale(1)}
-                //     }
-                // }
+                    @keyframes zoom {
+                        from {transform:scale(0)}
+                        to {transform:scale(1)}
+                    }
+                }
 
-                // &-lyrics {
-                //     display: none;
-                //     margin: auto;
-                //     height: calc(100vh - 240px);
-                //     width: calc(100vw - 200px);
-                // }
+                &-lyrics {
+                    display: none;
+                    margin: auto;
+                    height: calc(100vh - 240px);
+                    width: calc(100vw - 200px);
+                }
                 
 
                 &-close {
@@ -775,15 +785,15 @@ body {
                 // height: 150px;
             }
 
-            // #galleryModal-lyrics {
-            //     margin: auto;
-            //     display: none;
-            //     width: 50%;
-            //     text-align: center;
-            //     color: #ccc;
-            //     padding: 20px 0 100px;
-            //     // height: 150px;
-            // }
+            #galleryModal-lyrics {
+                margin: auto;
+                display: none;
+                width: 50%;
+                text-align: center;
+                color: #ccc;
+                padding: 20px 0 100px;
+                // height: 150px;
+            }
         }
     }
 
@@ -1372,6 +1382,13 @@ body {
                         line-height: 24px;
                         margin-bottom: 10px;
                     }
+                }
+            }
+            &-info {
+                padding: 0 24px 24px;
+        
+                &-link {
+                    font-size: 10px;
                 }
             }
         }

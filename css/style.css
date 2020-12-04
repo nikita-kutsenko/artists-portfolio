@@ -327,7 +327,7 @@ body {
 .footer-contacts {
   display: flex;
   justify-content: space-between;
-  padding: 80px 100px 100px;
+  padding: 80px 100px 80px;
   background-color: #000000; }
   .footer-contacts-left {
     display: flex;
@@ -372,6 +372,15 @@ body {
       line-height: 32px;
       margin-bottom: 10px;
       color: #ffffff; }
+
+.footer-info {
+  text-align: center;
+  padding: 0 0 20px;
+  background-color: #000000; }
+  .footer-info-link {
+    color: #ffffff;
+    opacity: .5;
+    font-size: 12px; }
 
 .rainbow-line {
   display: flex;
@@ -585,6 +594,25 @@ body {
     transform: scale(0); }
   to {
     transform: scale(1); } }
+    .main-galleryPage .galleryModal-videoBox {
+      display: none;
+      justify-content: center; }
+      .main-galleryPage .galleryModal-videoBox-video {
+        outline: none;
+        height: calc(100vh - 240px);
+        animation-name: zoom;
+        animation-duration: 0.6s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+    .main-galleryPage .galleryModal-lyrics {
+      display: none;
+      margin: auto;
+      height: calc(100vh - 240px);
+      width: calc(100vw - 200px); }
     .main-galleryPage .galleryModal-close {
       position: absolute;
       top: 100px;
@@ -608,6 +636,13 @@ body {
     text-align: center;
     color: #ccc;
     padding: 20px 0; }
+  .main-galleryPage #galleryModal-lyrics {
+    margin: auto;
+    display: none;
+    width: 50%;
+    text-align: center;
+    color: #ccc;
+    padding: 20px 0 100px; }
 
 .header .hero-aboutPage {
   display: flex;
@@ -943,6 +978,10 @@ body {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 10px; }
+  .footer-info {
+    padding: 0 24px 24px; }
+    .footer-info-link {
+      font-size: 10px; }
   .rainbow-line-text {
     padding: 2px 6px;
     font-size: 12px;

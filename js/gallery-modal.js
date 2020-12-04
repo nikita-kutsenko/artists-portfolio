@@ -11,15 +11,15 @@ var captionText = document.getElementById("galleryModal-text");
 var frontBox = document.getElementById("galleryModalImageFrontBoxID");
 var backBox = document.getElementById("galleryModalImageBackBoxID");
 var interiorBox = document.getElementById("galleryModalImageInteriorBoxID");
-// var videoBox = document.getElementById("galleryModalVideoBoxID");
-// var lyrics = document.getElementById("galleryModal-lyrics");
-// var video = document.getElementById("video");
+var videoBox = document.getElementById("galleryModalVideoBoxID");
+var lyrics = document.getElementById("galleryModal-lyrics");
+var video = document.getElementById("video");
 
 var frontBTN = document.getElementById('modal-front');
 var interiorBTN = document.getElementById('modal-interior');
 var backBTN = document.getElementById('modal-back'); 
-// var videoBTN = document.getElementById('modal-video');
-// var lyricsBTN = document.getElementById('modal-lyrics');
+var videoBTN = document.getElementById('modal-video');
+var lyricsBTN = document.getElementById('modal-lyrics');
 
 // Go through all of the images with our custom class
 for (var i = 0 ; i < images.length; i++ ) {
@@ -99,21 +99,21 @@ for (var i = 0 ; i < images.length; i++ ) {
                 interiorBTN.style.display = "none";
             });
 
-            // $.get(`../../input/gallery/video/page${pageAttr}/video${imgAttr}.mp4`
-            // ).done(function(){
-            //     videoBTN.style.display = "block";
-            //     video.src = `../../input/gallery/video/page${pageAttr}/video${imgAttr}.mp4`
-            // }).fail(function(){
-            //     videoBTN.style.display = "none";
-            // });
+            $.get(`../../input/gallery/video/page${pageAttr}/video${imgAttr}.mp4`
+            ).done(function(){
+                videoBTN.style.display = "block";
+                video.src = `../../input/gallery/video/page${pageAttr}/video${imgAttr}.mp4`
+            }).fail(function(){
+                videoBTN.style.display = "none";
+            });
 
-            // $.get('../../input/gallery/lyrics/'+lgAttr+'/page'+pageAttr+'/lyrics'+imgAttr+'.txt', function(data) {
-            //     lyrics.innerHTML = data;
-            // },'text').done(function(){
-            //     lyricsBTN.style.display = "block";
-            // }).fail(function(){
-            //     lyricsBTN.style.display = "none";
-            // });
+            $.get('../../input/gallery/lyrics/'+lgAttr+'/page'+pageAttr+'/lyrics'+imgAttr+'.txt', function(data) {
+                lyrics.innerHTML = data;
+            },'text').done(function(){
+                lyricsBTN.style.display = "block";
+            }).fail(function(){
+                lyricsBTN.style.display = "none";
+            });
         }
     }
 
@@ -130,17 +130,17 @@ for (var i = 0 ; i < images.length; i++ ) {
         interiorBTN.style.color = "#ffffff";
         interiorBTN.style.borderBottom = "none";
 
-        // videoBox.style.display = "none";
-        // videoBTN.style.color = "#ffffff";
-        // videoBTN.style.borderBottom = "none";
+        videoBox.style.display = "none";
+        videoBTN.style.color = "#ffffff";
+        videoBTN.style.borderBottom = "none";
 
-        // lyrics.style.display = "none";
-        // lyricsBTN.style.color = "#ffffff";
-        // lyricsBTN.style.borderBottom = "none";
+        lyrics.style.display = "none";
+        lyricsBTN.style.color = "#ffffff";
+        lyricsBTN.style.borderBottom = "none";
 
         captionText.style.display = "block";
 
-        // video.pause();
+        video.pause();
     }
 
     backBTN.onclick = function click(){
@@ -156,17 +156,17 @@ for (var i = 0 ; i < images.length; i++ ) {
         interiorBTN.style.color = "#ffffff";
         interiorBTN.style.borderBottom = "none";
 
-        // videoBox.style.display = "none";
-        // videoBTN.style.color = "#ffffff";
-        // videoBTN.style.borderBottom = "none";
+        videoBox.style.display = "none";
+        videoBTN.style.color = "#ffffff";
+        videoBTN.style.borderBottom = "none";
 
-        // lyrics.style.display = "none";
-        // lyricsBTN.style.color = "#ffffff";
-        // lyricsBTN.style.borderBottom = "none";
+        lyrics.style.display = "none";
+        lyricsBTN.style.color = "#ffffff";
+        lyricsBTN.style.borderBottom = "none";
 
         captionText.style.display = "block";
 
-        // video.pause();
+        video.pause();
     }
 
     interiorBTN.onclick = function click(){
@@ -182,60 +182,71 @@ for (var i = 0 ; i < images.length; i++ ) {
         interiorBTN.style.color = "#D5C4B2";
         interiorBTN.style.borderBottom = "1px solid #D5C4B2";
 
-        // videoBox.style.display = "none";
-        // videoBTN.style.color = "#ffffff";
-        // videoBTN.style.borderBottom = "none";
+        videoBox.style.display = "none";
+        videoBTN.style.color = "#ffffff";
+        videoBTN.style.borderBottom = "none";
 
-        // lyrics.style.display = "none";
-        // lyricsBTN.style.color = "#ffffff";
-        // lyricsBTN.style.borderBottom = "none";
+        lyrics.style.display = "none";
+        lyricsBTN.style.color = "#ffffff";
+        lyricsBTN.style.borderBottom = "none";
 
         captionText.style.display = "block";
 
-        // video.pause();
+        video.pause();
     }
 
-    // videoBTN.onclick = function click(){
-    //     frontBox.style.display = "none";
-    //     frontBTN.style.color = "#ffffff";
-    //     frontBTN.style.borderBottom = "none";
+    videoBTN.onclick = function click(){
+        frontBox.style.display = "none";
+        frontBTN.style.color = "#ffffff";
+        frontBTN.style.borderBottom = "none";
 
-    //     backBox.style.display = "none";
-    //     backBTN.style.color = "#ffffff";
-    //     backBTN.style.borderBottom = "none";
+        backBox.style.display = "none";
+        backBTN.style.color = "#ffffff";
+        backBTN.style.borderBottom = "none";
+        
+        interiorBox.style.display = "none";
+        interiorBTN.style.color = "#ffffff";
+        interiorBTN.style.borderBottom = "none";
 
-    //     videoBox.style.display = "flex";
-    //     videoBTN.style.color = "#D5C4B2";
-    //     videoBTN.style.borderBottom = "1px solid #D5C4B2";
+        videoBox.style.display = "flex";
+        videoBTN.style.color = "#D5C4B2";
+        videoBTN.style.borderBottom = "1px solid #D5C4B2";
 
-    //     lyrics.style.display = "none";
-    //     lyricsBTN.style.color = "#ffffff";
-    //     lyricsBTN.style.borderBottom = "none";
+        lyrics.style.display = "none";
+        lyricsBTN.style.color = "#ffffff";
+        lyricsBTN.style.borderBottom = "none";
 
-    //     captionText.style.display = "block";
-    // }
+        captionText.style.display = "block";
 
-    // lyricsBTN.onclick = function click(){
-    //     frontBox.style.display = "none";
-    //     frontBTN.style.color = "#ffffff";
-    //     frontBTN.style.borderBottom = "none";
+        video.load();
+        video.play();
+    }
 
-    //     backBox.style.display = "none";
-    //     backBTN.style.color = "#ffffff";
-    //     backBTN.style.borderBottom = "none";
+    lyricsBTN.onclick = function click(){
+        frontBox.style.display = "none";
+        frontBTN.style.color = "#ffffff";
+        frontBTN.style.borderBottom = "none";
 
-    //     videoBox.style.display = "none";
-    //     videoBTN.style.color = "#ffffff";
-    //     videoBTN.style.borderBottom = "none";
+        backBox.style.display = "none";
+        backBTN.style.color = "#ffffff";
+        backBTN.style.borderBottom = "none";
+        
+        interiorBox.style.display = "none";
+        interiorBTN.style.color = "#ffffff";
+        interiorBTN.style.borderBottom = "none";
 
-    //     lyrics.style.display = "block";
-    //     lyricsBTN.style.color = "#D5C4B2";
-    //     lyricsBTN.style.borderBottom = "1px solid #D5C4B2";
+        videoBox.style.display = "none";
+        videoBTN.style.color = "#ffffff";
+        videoBTN.style.borderBottom = "none";
 
-    //     captionText.style.display = "none";
+        lyrics.style.display = "block";
+        lyricsBTN.style.color = "#D5C4B2";
+        lyricsBTN.style.borderBottom = "1px solid #D5C4B2";
 
-    //     video.pause();
-    // }
+        captionText.style.display = "none";
+
+        video.pause();
+    }
 }
 
 // Get the <span> element that closes the modal
@@ -256,15 +267,15 @@ span.onclick = function() {
     interiorBTN.style.color = "#ffffff";
     interiorBTN.style.borderBottom = "none";
 
-    // videoBox.style.display = "none";
-    // videoBTN.style.color = "#ffffff";
-    // videoBTN.style.borderBottom = "none";
+    videoBox.style.display = "none";
+    videoBTN.style.color = "#ffffff";
+    videoBTN.style.borderBottom = "none";
 
-    // lyrics.style.display = "none";
-    // lyricsBTN.style.color = "#ffffff";
-    // lyricsBTN.style.borderBottom = "none";
+    lyrics.style.display = "none";
+    lyricsBTN.style.color = "#ffffff";
+    lyricsBTN.style.borderBottom = "none";
 
     captionText.style.display = "block";
 
-    // video.pause();
+    video.pause();
 }
