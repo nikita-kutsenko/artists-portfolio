@@ -914,7 +914,7 @@ body {
         .main-galleryPage .galleryModal-btns #modal-front {
           color: #D5C4B2;
           border-bottom: 1px solid #D5C4B2; }
-      .main-galleryPage .galleryModal-imageBox, .main-galleryPage .galleryModal-imageBackBox {
+      .main-galleryPage .galleryModal-imageBox, .main-galleryPage .galleryModal-imageBackBox, .main-galleryPage .galleryModal-interiorBox {
         height: calc(100vh - 200px);
         width: calc(100vw - 24px); }
       .main-galleryPage .galleryModal-videoBox {
