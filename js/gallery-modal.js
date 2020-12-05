@@ -1,4 +1,6 @@
 var modal = document.getElementById("galleryModalID");
+var bodyTag = document.getElementsByTagName("body")[0];
+console.dir(bodyTag);
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var images = document.getElementsByClassName('galleryImages');
@@ -27,6 +29,7 @@ for (var i = 0 ; i < images.length; i++ ) {
     image.onclick = function click(){
         modal.style.display = "block";
         modalImg.src = this.src;
+        // bodyTag.style.overflow = "hidden";
         let imgAttr = this.attributes['data-text'].textContent;
         let pageAttr = this.attributes['data-page'].textContent;
         let lgAttr = this.attributes['data-lg'].textContent;
@@ -278,4 +281,6 @@ span.onclick = function() {
     captionText.style.display = "block";
 
     video.pause();
+
+    bodyTag.style.overflow = "visible";
 }
